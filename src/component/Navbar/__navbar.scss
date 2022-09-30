@@ -1,0 +1,253 @@
+@import "../../_variables";
+
+.navBarContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 100%;
+
+  .mainLogoContainer {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 202.12px;
+      height: 40.14px;
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 4rem;
+    align-items: center;
+    list-style-type: none;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #202F44;
+
+    .header {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    li{
+      .dropicon{
+        margin-left: 5px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #202F44;
+    }
+
+    .nav-dropDown {
+      position: absolute;
+      width: 150px;
+      height: 99px;
+      background: #e2e7fe;
+      box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.08),
+        2px 4px 3px rgba(0, 0, 0, 0.11);
+      border-radius: 9px;
+      left: 19%;
+      top: 40px;
+      padding: 0;
+
+      ul{
+        padding: 0 0 0 20px;
+        text-align: justify;
+
+        li{
+          text-decoration: none;
+          list-style: none;
+          line-height: 37px;
+          color: #202F44;
+          font-weight: 700;
+          font-size: 14.2575px;
+
+          a{
+            color: #202F44;
+          }
+        }
+      }
+    }
+
+    .btnContainer {
+      display: grid;
+      place-content: center;
+      .appBtn {
+        background: #0045ff;
+        font-weight: 600;
+        font-family: "Montserrat";
+        font-size: 18.3961px;
+        display: grid;
+        place-content: center;
+        color: $textColorWhite;
+        padding: 0.5rem 3rem;
+        font-family: "Montserrat";
+        border: none;
+        border-radius: 22.7586px;
+        cursor: pointer;
+
+        a {
+          color: $textColorWhite;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navBarContainer {
+    grid-template-columns: 1fr 1fr;
+
+    .header {
+      display: none;
+
+      .btnContainer {
+        display: none;
+      }
+    }
+  }
+
+  .toggleContainer {
+    display: block;
+    justify-self: flex-end;
+    align-self: center;
+  }
+  .headerTextContainer p {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* .navBarContainer {
+    grid-template-columns: 50% 30% 20%;
+  } */
+}
+
+@media only screen and (min-width: 1800px) {
+  .navBarContainer {
+    padding: 51px 240px;
+
+    .header {
+      gap: 150px;
+      .btnContainer {
+        font-family: "Montserrat";
+        .appBtn {
+          font-family: "Montserrat";
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 2000px) {
+  .navBarContainer {
+    padding: 51px 140px;
+
+    .header {
+      gap: 100px;
+      .btnContainer {
+        font-family: "Montserrat";
+        .appBtn {
+          font-family: "Montserrat";
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navBarContainer {
+    grid-template-columns: 4fr 1fr;
+    padding: 2rem 1rem;
+
+    .mainLogoContainer {
+      // padding: 0 1rem;
+
+      .mainLogo {
+        height: 18px;
+        width: 92.52px;
+      }
+    }
+
+    .header {
+      display: none;
+      .btnContainer {
+        display: none;
+      }
+    }
+
+    .icon {
+      display: block;
+      color: $navBtn;
+      width: 21px;
+      height: 20px;
+    }
+  }
+
+  .toggleContainer {
+    display: block;
+    margin-right: 1rem;
+  }
+  .headerTextContainer p {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .navBarContainer {
+    grid-template-columns: 4fr 1fr;
+    padding: 2rem 1rem;
+
+    .mainLogoContainer {
+      // padding: 0 1rem;
+
+      .mainLogo {
+        height: 18px;
+        width: 92.52px;
+      }
+    }
+
+    .header {
+      display: none;
+      .btnContainer {
+        display: none;
+      }
+    }
+
+    .icon {
+      display: block;
+      color: $navBtn;
+      width: 21px;
+      height: 20px;
+    }
+  }
+
+  .toggleContainer {
+    display: block;
+    margin-right: 1rem;
+  }
+  .headerTextContainer p {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    padding: 0 2rem;
+  }
+}
+
