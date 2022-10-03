@@ -179,8 +179,8 @@
       // padding: 0 1rem;
 
       .mainLogo {
-        height: 18px;
-        width: 92.52px;
+        height: 30px;
+        // width: 92.52px;
       }
     }
 
@@ -214,13 +214,13 @@
   .navBarContainer {
     grid-template-columns: 4fr 1fr;
     padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
 
     .mainLogoContainer {
-      // padding: 0 1rem;
 
       .mainLogo {
-        height: 18px;
-        width: 92.52px;
+        width: 202px;
       }
     }
 
@@ -234,8 +234,8 @@
     .icon {
       display: block;
       color: $navBtn;
-      width: 21px;
-      height: 20px;
+      width: 31px;
+      height: 30px;
     }
   }
 

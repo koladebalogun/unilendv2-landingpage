@@ -6,9 +6,35 @@ import polygonLogo from "../../assets/PolygonLogo.png";
 import binance from "../../assets/BInanceLogo.png";
 import explore from "../../assets/exploreImg5.png";
 import explore2 from "../../assets/exploreImg4.png";
+import binanceImg from "../../assets/binance.png"
+import uniswap from "../../assets/uniswap.png"
 import { TestimonyCarousel } from "../../utils/Carousel";
 
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 export default function Homepage() {
+  const tl = gsap.timeline();
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    tl.from('trade-content', 3,{
+      y:40,
+      opacity:0,
+      ease: 'ease-in',
+      scrollTrigger:{
+          trigger: '.trade-container',
+          start: '-15% 10%',
+          end: 'bottom 60%',
+          toggleActions: 'restart none none reverse',
+          // markers: true
+
+      }
+  })
+  },[])
+
+
+
   return (
     <div>
       <div className="headerTextContainer">
@@ -38,6 +64,24 @@ export default function Homepage() {
           <div className="poweredBySubContainer">
             <img src={binance} alt="" id="bscLogo" />
             <h1>Binance</h1>
+          </div>
+        </div>
+      </div>
+
+      <div className="trade-container">
+        <div className="trade-content">
+          <div className="trade-title">
+            <h3>Trade UFT Token</h3>
+            <span>On Major Exchanges</span>
+          </div>
+
+          <div className="trade-images">
+            <div className="trade-images-container">
+              <img src={binanceImg} alt="" />
+            </div>
+            <div className="trade-images-container">
+              <img src={uniswap} alt="" />
+            </div>
           </div>
         </div>
       </div>

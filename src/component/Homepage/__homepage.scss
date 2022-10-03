@@ -123,6 +123,50 @@
   }
 }
 
+.trade-container {
+  padding: 240px 10rem 0rem 10rem;
+  max-width: 1500px;
+  margin: auto;
+  .trade-content {
+    text-align: center;
+    .trade-title {
+      text-align: center;
+      h3 {
+        font-weight: 500;
+        font-size: 65px;
+        color: #202f44;
+        line-height: 79px;
+        margin: 0;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: 65px;
+        color: #202f44;
+      }
+    }
+  }
+
+  .trade-images {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    gap: 184px;
+    .trade-images-container {
+      width: 395px;
+      height: 124px;
+      background: #202f44;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 304px;
+      }
+    }
+  }
+}
+
 #explore-dapp-section {
   position: relative;
   .explore-dapp-container {
@@ -204,7 +248,7 @@
   .coin1 {
     img {
       position: absolute;
-      top: 2%;
+      top: 42%;
       width: 800px;
       z-index: -1;
     }
@@ -310,7 +354,6 @@
         }
       }
     }
-
   }
 
   .ftImg {
@@ -689,7 +732,6 @@
     gap: 4rem;
     display: flex;
     margin-top: 136px;
-    flex-wrap: wrap;
     position: relative;
     .our-community-card {
       display: flex;
@@ -741,7 +783,7 @@
 
 .common-container {
   display: flex;
-  
+
   .footer-container {
     display: flex;
     justify-content: space-between;
@@ -1015,7 +1057,7 @@
     .coin1 {
       img {
         position: absolute;
-        top: -7%;
+        top: 40%;
         left: 2%;
         width: 900px;
         z-index: -1;
@@ -1036,7 +1078,6 @@
   .common-container {
     position: relative;
     display: block;
-
 
     .featuresContainer {
       // width: 100%;
@@ -1242,10 +1283,39 @@
     gap: 2rem;
   }
 
+  .trade-container{
+    padding: 2rem 2rem 0rem 2rem;
+    .trade-content{
+      .trade-title{
+        h3{
+          font-size: 40px;
+        }
+
+        span{
+          font-size: 40px;
+        }
+
+      }
+    }
+
+    .trade-images{
+      margin-top: 70px;
+      gap: 130px;
+      .trade-images-container{
+        width: 250px;
+        height: 90px;
+        img{
+          width: 150px;
+        }
+      }
+    }
+
+  }
+
   .explore-dapp-container {
     // flex-direction: column;
-    display: flex;
-    padding: 104px 4rem 0rem 4rem;
+    display: block;
+    padding: 154px 4rem 0rem 4rem;
   }
 
   .get-involved-container {
@@ -1318,6 +1388,35 @@
         height: 13px;
       }
     }
+  }
+
+  .trade-container{
+    padding: 2rem 2rem 0rem 2rem;
+    .trade-content{
+      .trade-title{
+        h3{
+          font-size: 40px;
+        }
+
+        span{
+          font-size: 40px;
+        }
+
+      }
+    }
+
+    .trade-images{
+      margin-top: 70px;
+      gap: 30px;
+      .trade-images-container{
+        width: 150px;
+        height: 30px;
+        img{
+          width: 100px;
+        }
+      }
+    }
+
   }
 
   .custom-container {
@@ -1406,16 +1505,11 @@
 
       .explore-dapp-content {
         display: block;
-        // flex-basis: 40%;
-        // flex-direction: column;
-        text-align: center;
-
         .explore-dapp-title {
           font-weight: 600;
           font-size: 35px;
           line-height: 43px;
           color: $cardTitle2;
-          text-align: center !important;
           display: block !important;
           margin: 30px auto;
         }
@@ -1434,7 +1528,6 @@
 
         .explore-dapp-button {
           display: block;
-          text-align: center;
           font-size: 15.6379px;
         }
       }
@@ -1445,7 +1538,6 @@
           margin-top: 30px;
           width: 100% !important;
           height: 315.58px;
-          
         }
       }
     }
@@ -1469,14 +1561,11 @@
       .explore-dapp-content {
         display: block;
 
-        text-align: center;
-
         .explore-dapp-title {
           font-weight: 600;
           font-size: 35px;
           line-height: 43px;
           color: $cardTitle2;
-          text-align: center;
           display: block;
           margin: 0 auto;
         }
@@ -1491,12 +1580,10 @@
           // flex-wrap: wrap;
           display: block;
           margin: 30px 0;
-          text-align: center;
         }
 
         .explore-dapp-button {
           display: block;
-          text-align: center;
           font-size: 15.6379px;
           font-weight: 700;
           color: $textBlue;
@@ -1507,7 +1594,7 @@
       .explore-dapp-content-1 {
         align-self: center;
         img {
-          width: 307px !important;
+          width: 100% !important;
           height: 315.58px;
           display: flex;
           margin: 0 auto;
@@ -1620,7 +1707,6 @@
     .container-title {
       font-size: 35px;
       line-height: 43px;
-      text-align: center;
       display: block;
     }
 
@@ -1656,20 +1742,16 @@
         font-size: 35px;
         line-height: 43px;
         display: block;
-        text-align: center;
       }
 
       .get-involved-sub-title {
-        font-size: 11.4087px;
+        font-size: 16px;
         line-height: 149.5%;
         color: #818ba1;
-        text-align: center;
       }
 
       .get-involved-button {
         display: block;
-        text-align: center;
-        margin: 0 auto;
         width: 147.51px;
         height: 39.56px;
         background: #0045ff;
@@ -1685,7 +1767,6 @@
     .get-involved-content-2 {
       .get-involved-content-title {
         font-size: 20px;
-        text-align: center;
         display: block;
         margin-top: 38px;
       }
@@ -1694,7 +1775,6 @@
         font-size: 11.4087px;
         line-height: 149.5%;
         color: #818ba1;
-        text-align: center;
       }
     }
   }
@@ -1709,7 +1789,6 @@
 
     .container-title {
       display: block;
-      text-align: center;
       font-size: 35px;
       line-height: 43px;
     }
@@ -1787,7 +1866,6 @@
       line-height: 43px;
       display: block;
       color: $cardTitle;
-      text-align: center;
       .container-title-sub {
         font-weight: bold;
       }
@@ -1933,7 +2011,7 @@
         .logo-content {
           border-top: 1.08686px solid #c2c2c2;
           padding: 20px 0px;
-          gap: 2.7rem;
+          gap: 1.3rem;
           .logo-content-img {
             width: 25px;
             height: 20px;
@@ -1970,14 +2048,13 @@
 @media only screen and (max-width: 820px) {
   .headerTextContainer {
     p {
-      width: 60%;
-      overflow-wrap: break-word;
+      width: 100%;
+      // overflow-wrap: break-word;
       font-size: 22.8763px;
-      .colorText::after {
-        content: "\a";
-        white-space: pre;
-      }
-
+      // .colorText::after {
+      //   content: "\a";
+      //   white-space: pre;
+      // }
     }
 
     .colorText {
@@ -1990,17 +2067,18 @@
     width: 100%;
 
     .bannerImg {
-      display: none;
+      display: block;
     }
 
     .bannerImgMobile {
-      display: block;
+      display: none;
       width: 450px;
       height: 282px;
     }
 
     .poweredByContainer {
-      width: 450px;
+      width: 60%;
+      height: 20px;
       margin: 2rem 0 0 0;
       padding: 0.5rem;
 
@@ -2024,6 +2102,35 @@
         height: 13px;
       }
     }
+  }
+
+  .trade-container{
+    padding: 2rem 2rem 0rem 2rem;
+    .trade-content{
+      .trade-title{
+        h3{
+          font-size: 40px;
+        }
+
+        span{
+          font-size: 40px;
+        }
+
+      }
+    }
+
+    .trade-images{
+      margin-top: 70px;
+      gap: 60px;
+      .trade-images-container{
+        width: 270px;
+        height: 60px;
+        img{
+          width: 100px;
+        }
+      }
+    }
+
   }
 
   .custom-container {
@@ -2059,7 +2166,7 @@
   }
 
   .common-container {
-    padding: 100px 34px 0rem 34px;
+    padding: 100px 2rem 0rem 2rem;
     .featuresCarousalContainer {
       display: none;
       margin: 0 auto;
@@ -2071,14 +2178,14 @@
 
     .featuresContainer {
       column-gap: 3rem;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       row-gap: 2rem;
       width: 60%;
       .card {
-        width: 325.61px;
+        width: 310.61px;
         height: 437.53px;
-        padding: 60px 14px;
-        margin: 0 auto;
+        padding: 60px 10px;
+        // margin: 0 auto;
         // padding: 50px 17px;
 
         img {
@@ -2110,31 +2217,29 @@
   #explore-dapp-section {
     .explore-dapp-container {
       justify-content: space-between;
-      padding: 54px 34px 0 34px;
+      padding: 154px 2rem 0 2rem;
+      display: block;
 
       .explore-dapp-content {
         display: block;
 
         .explore-dapp-title {
           font-weight: 600;
-          font-size: 30px;
+          font-size: 35.2688px;
           line-height: 43px;
           color: $cardTitle2;
           display: block;
-          width: 200px;
         }
 
         .explore-dapp-sub-title {
           font-weight: 600;
-          font-size: 11px;
+          font-size: 12.1494px;
           line-height: 149.5%;
           color: $cardTitle2;
           opacity: 0.5;
-          width: 100%;
+          max-width: 400px !important;
           flex-wrap: wrap;
           display: flex;
-          align-items: center !important;
-          margin-bottom: 30px;
         }
 
         .explore-dapp-button {
@@ -2146,10 +2251,10 @@
 
       .explore-dapp-content-1 {
         align-self: center;
+        margin-top: 30px;
         img {
-          width: 349px;
-          height: 315.58px;
-          
+          width: 100%;
+          height: auto;
         }
       }
     }
@@ -2167,17 +2272,15 @@
     }
 
     .mobile-explore-dapp-container {
-      display: flex;
-      justify-content: space-between;
-      padding: 54px 34px 0 34px;
+      display: block;
+      padding: 150px 2rem 54px 2rem;
 
       .explore-dapp-content {
         display: block;
 
-
         .explore-dapp-title {
           font-weight: 600;
-          font-size: 30px;
+          font-size: 35.2688px;
           line-height: 43px;
           color: $cardTitle2;
           margin-bottom: 30px;
@@ -2186,19 +2289,17 @@
 
         .explore-dapp-sub-title {
           font-weight: 600;
-          font-size: 11px;
+          font-size: 12.1494px;
           line-height: 149.5%;
           color: $cardTitle2;
           opacity: 0.5;
-          width: 300px !important;
+          max-width: 400px !important;
           flex-wrap: wrap;
           display: flex;
-          // margin: 30px auto;
         }
 
         .explore-dapp-button {
           display: block;
-          // text-align: center;
           font-size: 15.6379px;
           font-weight: 700;
           color: $textBlue;
@@ -2211,15 +2312,11 @@
         align-self: center;
         img {
           width: 100% !important;
-          height: 315.58px;
-          display: flex;
-          margin: 0 auto;
+          height: auto;
         }
       }
     }
   }
-
-  
 
   .explore-dapp-mobile {
     display: none;
@@ -2275,12 +2372,11 @@
   }
 
   .common-container {
-    padding: 104px 34px 0rem 34px;
+    padding: 104px 2rem 0rem 2rem;
 
     .container-title {
       font-size: 35px;
       line-height: 43px;
-      text-align: center;
       display: block;
     }
 
@@ -2309,31 +2405,25 @@
 
   .get-involved-container {
     display: block;
-    padding: 104px 34px 0rem 34px;
-    text-align: center;
+    padding: 104px 2rem 0rem 2rem;
 
     .get-involved-content {
       .get-involved-title {
         font-size: 35px;
         line-height: 43px;
         display: block;
-        text-align: center;
       }
 
       .get-involved-sub-title {
-        font-size: 11.4087px;
+        font-size: 16px;
         line-height: 149.5%;
         color: #818ba1;
-        text-align: center;
         display: block;
         width: 100%;
-        margin: 0 auto;
       }
 
       .get-involved-button {
         display: block;
-        text-align: center;
-        margin: 0 auto;
         width: 147.51px;
         height: 39.56px;
         background: #0045ff;
@@ -2348,18 +2438,17 @@
     }
 
     .get-involved-content-2 {
+      gap: 0;
       .get-involved-content-title {
         font-size: 20px;
-        text-align: center;
         display: block;
         margin-top: 38px;
       }
 
       .get-involved-content-sub-title {
-        font-size: 11.4087px;
+        font-size: 16px;
         line-height: 149.5%;
         color: #818ba1;
-        text-align: center;
       }
     }
   }
@@ -2370,11 +2459,10 @@
 
   .testimony-container {
     display: block;
-    padding: 104px 13px 0rem 13px;
+    padding: 104px 2rem 0rem 2rem;
 
     .container-title {
       display: block;
-      text-align: center;
       font-size: 35px;
       line-height: 43px;
     }
@@ -2383,7 +2471,7 @@
       display: none;
     }
 
-    .mobile-write-aboutus{
+    .mobile-write-aboutus {
       display: block;
     }
 
@@ -2393,7 +2481,7 @@
       padding: 20px 30px;
       .mobile-write-aboutus-header {
         font-weight: 600;
-        font-size: 15px;
+        font-size: 17px;
       }
 
       .mobile-write-aboutus-inner {
@@ -2418,13 +2506,12 @@
   }
 
   .common-container {
-    padding: 104px 13px 0rem 13px;
+    padding: 104px 2rem 0rem 2rem;
 
     .our-community-card-container {
-      display: flex;
-      // grid-template-columns: 1fr 1fr;
+      // display: flex;
       justify-items: center;
-      margin-top: 30px;
+      margin-top: 50px;
       .our-community-card {
         width: 104.28px;
         height: 80.22px;
@@ -2439,7 +2526,7 @@
   .our-community-card-container-mobile {
     width: 100%;
     justify-content: space-between;
-    display: flex;
+    display: none;
     position: absolute;
     z-index: -1;
   }
@@ -2448,7 +2535,7 @@
     display: block;
     margin: 0;
     .blog-mobile-container {
-      padding: 54px 13px 0rem 13px;
+      padding: 104px 34px 0rem 34px;
     }
 
     .container-title {
@@ -2457,7 +2544,6 @@
       line-height: 43px;
       display: block;
       color: $cardTitle;
-      text-align: center;
       .container-title-sub {
         font-weight: bold;
       }
@@ -2470,8 +2556,6 @@
       color: $cardTitle;
       opacity: 0.8;
       margin-top: 1rem;
-
-      
     }
 
     .blog-card-container {
@@ -2504,7 +2588,7 @@
           background: transparent;
           border-radius: 0px 0px 10px 10px;
 
-          a{
+          a {
             text-decoration: none;
             color: inherit;
           }
@@ -2515,20 +2599,18 @@
 
   .token-container {
     display: block;
-    padding: 104px 13px 0rem 13px;
+    padding: 104px 2rem 0rem 2rem;
     .token-content {
       .token-title {
         display: block;
         font-size: 35px;
         line-height: 43px;
-        text-align: center;
       }
 
       .token-sub-title {
         font-size: 11px;
         line-height: 13px;
         color: #818ba1;
-        text-align: center;
         display: block;
         width: 327px;
         margin: 30px auto;
@@ -2536,7 +2618,6 @@
 
       .token-button {
         display: block;
-        text-align: center;
         margin: 0 auto;
         width: 147.51px;
         height: 39.56px;
@@ -2570,14 +2651,13 @@
       gap: 50px;
       display: block;
       margin-top: 100px;
-   
 
       .footer-dT {
         display: none;
       }
 
       li {
-        font-size: 11.6849px;
+        font-size: 17px;
         line-height: 14px;
         color: #818ba1;
       }
@@ -2595,7 +2675,7 @@
 
         .footer-first-child {
           .footer-title {
-            font-size: 15.771px;
+            font-size: 23px;
             color: #202f44;
           }
 
@@ -2607,14 +2687,14 @@
 
       .footer-last-child {
         .footer-title {
-          font-size: 15.771px;
+          font-size: 23px;
           color: #202f44;
         }
 
         .logo-content {
           border-top: 1.08686px solid #c2c2c2;
           padding: 20px 0px;
-          gap: 2.7rem;
+          gap: 2.1rem;
           .logo-content-img {
             width: 25px;
             height: 20px;
@@ -2626,7 +2706,6 @@
 
   .common-container {
     .social-media-container {
-
       .footerlogo {
         display: none;
       }
