@@ -6,8 +6,8 @@ import polygonLogo from "../../assets/PolygonLogo.png";
 import binance from "../../assets/BInanceLogo.png";
 import explore from "../../assets/exploreImg5.png";
 import explore2 from "../../assets/exploreImg4.png";
-import binanceImg from "../../assets/binance.png"
-import uniswap from "../../assets/uniswap.png"
+import binanceImg from "../../assets/binance.svg"
+import uniswap from "../../assets/uniswap.svg"
 import { TestimonyCarousel } from "../../utils/Carousel";
 
 
