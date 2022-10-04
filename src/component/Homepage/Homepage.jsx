@@ -10,28 +10,9 @@ import binanceImg from "../../assets/binance.png"
 import uniswap from "../../assets/uniswap.png"
 import { TestimonyCarousel } from "../../utils/Carousel";
 
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 export default function Homepage() {
-  const tl = gsap.timeline();
-  gsap.registerPlugin(ScrollTrigger);
-
-  useEffect(() => {
-    tl.from('trade-content', 3,{
-      y:40,
-      opacity:0,
-      ease: 'ease-in',
-      scrollTrigger:{
-          trigger: '.trade-container',
-          start: '-15% 10%',
-          end: 'bottom 60%',
-          toggleActions: 'restart none none reverse',
-          // markers: true
-
-      }
-  })
-  },[])
 
 
 
